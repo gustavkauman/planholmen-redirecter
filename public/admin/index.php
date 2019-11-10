@@ -33,21 +33,7 @@ require_once 'read.php';
     <table>
         <?php
 
-            $prep_stmt = 'SELECT * FROM `' . DB_PREFIX . 'redirect`';
-            $stmt = $mysqli->prepare($prep_stmt);
-
-            $out = '';
-
-            if ( ! $stmt->execute() || ! $res = $stmt->get_result()) {
-                echo "error";
-            } else {
-                while ($row = $res->fetch_array(MYSQLI_ASSOC)) {
-                    echo '<tr>';
-                    echo '<td>' . $row['name'] . '</td>';
-                    echo '<td>' . $row['url'] . '</td>';
-                    echo '</tr>';
-                }
-            }
+            echo get_all_urls($mysqli);
 
         ?>
     </table>
