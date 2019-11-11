@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/../handlers/loader.php';
+require_once __DIR__ . '/../handlers/loader.php';
 
 $name = $_POST['name'];
 $url = $_POST['url'];

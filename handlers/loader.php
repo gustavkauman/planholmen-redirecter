@@ -1,4 +1,4 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/../env.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/../handlers/database.php';
+require_once __DIR__ . '/../env.php';
+require_once __DIR__ . '/database.php';
